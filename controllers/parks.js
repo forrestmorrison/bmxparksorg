@@ -1,0 +1,1 @@
+const parks = require('./data/parks');
