@@ -1,0 +1,38 @@
+BMXParks.org
+
+launched full stack bmxparks.org integrated testing, google maps, user management
+
+BMXParks.org provides Google Map with pins of different BMX parks around the US.
+
+Users can add park by clicking spot on the map or adding the address manually
+
+When users click a park on the map it will display information from Google as well as user inputted info
+
+users, when adding a new park, can input name, address, hours, park type, free or paid & additional info
+
+use auto-complete api to auto-complete relevant search results
+
+
+bmxparksorg2 public ip address: 35.232.26.199
+bmxparksorg2 connection name: i-hexagon-343017:us-central1:bmxparksorg2
+
+
+
+FUNCTIONALITY:
+
+create account
+log in
+Google Map & API
+User add/remove park
+User search Google API & Database for park info
+comments
+
+
+
+TO DO LIST:
+
+install React, create react app, npm i
+get all data structures connected (front end, back end, routes etc)
+make sure API call works (Google API/Google Maps API)
+make sure Google Cloud database is working
+
