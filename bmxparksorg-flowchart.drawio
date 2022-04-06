@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-06T15:48:15.230Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="9rKdjesKO93UV_tvXx-K" version="17.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-06T16:00:29.871Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="hRckjw9aCJmGLuw5afrd" version="17.4.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -17,10 +17,10 @@
           <mxGeometry x="364" y="530" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-11" value="click marker to display park info in side window" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="354" y="760" width="120" height="70" as="geometry" />
+          <mxGeometry x="361" y="760" width="106" height="50" as="geometry" />
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-12" value="add new park" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="509" y="550" width="120" height="40" as="geometry" />
+          <mxGeometry x="520" y="560" width="81" height="20" as="geometry" />
         </mxCell>
         <mxCell id="6w2fOu5glx9IQaSbhCSE-1" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -47,7 +47,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="6w2fOu5glx9IQaSbhCSE-11" value="browse map &amp;amp; see where already inputted parks are located" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="354" y="650" width="120" height="70" as="geometry" />
+          <mxGeometry x="356" y="655" width="116" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6w2fOu5glx9IQaSbhCSE-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-10" target="6w2fOu5glx9IQaSbhCSE-11">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -86,10 +86,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="6w2fOu5glx9IQaSbhCSE-17" value="(when logged in)&lt;br&gt;settings button&lt;br&gt;create new park button&lt;br&gt;demo user button*" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="181" y="310" width="136" height="80" as="geometry" />
+          <mxGeometry x="184.5" y="320" width="129" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6w2fOu5glx9IQaSbhCSE-18" value="(not logged in)&lt;br&gt;sign up button&lt;br&gt;log in button&lt;br&gt;(Google Map visible)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="29" y="180" width="120" height="90" as="geometry" />
+          <mxGeometry x="29" y="210" width="119" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6w2fOu5glx9IQaSbhCSE-20" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="6w2fOu5glx9IQaSbhCSE-18">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -98,7 +98,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="6w2fOu5glx9IQaSbhCSE-21" value="user can input address or click on map to add marker with Google Geocoding" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="679" y="525" width="120" height="90" as="geometry" />
+          <mxGeometry x="660" y="532.5" width="111" height="75" as="geometry" />
         </mxCell>
         <mxCell id="6w2fOu5glx9IQaSbhCSE-22" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-12" target="6w2fOu5glx9IQaSbhCSE-21">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -107,12 +107,30 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="6w2fOu5glx9IQaSbhCSE-25" value="SEARCH&lt;br&gt;has auto-complete" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="129" y="540" width="120" height="60" as="geometry" />
+          <mxGeometry x="33.5" y="550" width="111" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="6w2fOu5glx9IQaSbhCSE-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6w2fOu5glx9IQaSbhCSE-25" target="WIyWlLk6GJQsqaUBKTNV-10">
+        <mxCell id="6w2fOu5glx9IQaSbhCSE-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6w2fOu5glx9IQaSbhCSE-32" target="6w2fOu5glx9IQaSbhCSE-25">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="240" y="600" as="sourcePoint" />
-            <mxPoint x="290" y="550" as="targetPoint" />
+            <mxPoint x="180" y="570" as="sourcePoint" />
+            <mxPoint x="240" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w2fOu5glx9IQaSbhCSE-29" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="33" y="640" width="111" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6w2fOu5glx9IQaSbhCSE-31" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="6w2fOu5glx9IQaSbhCSE-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="88" y="590" as="sourcePoint" />
+            <mxPoint x="120" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w2fOu5glx9IQaSbhCSE-32" value="Auto-fills search results from Google Maps API" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="193.5" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6w2fOu5glx9IQaSbhCSE-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-10" target="6w2fOu5glx9IQaSbhCSE-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="500" as="sourcePoint" />
+            <mxPoint x="340" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
