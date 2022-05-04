@@ -13,9 +13,11 @@ users, when adding a new park, can input name, address, hours, park type, free o
 use auto-complete api to auto-complete relevant search results
 
 
+database: bmxparksorg2
 bmxparksorg2 public ip address: 35.232.26.199
 bmxparksorg2 connection name: i-hexagon-343017:us-central1:bmxparksorg2
-
+Google Maps API (4/4/22): AIzaSyBVM8bvhYZGj8hzwMBaUZpJP9XZTLu382Y (bmxparksorg@gmail.com)
+old key (3/22): AIzaSyDmNjVJc_YBllQAeiPhiAWyW-u2j1nvGbQ&v
 
 
 FUNCTIONALITY:
@@ -31,8 +33,19 @@ comments
 
 TO DO LIST:
 
-install React, create react app, npm i
-get all data structures connected (front end, back end, routes etc)
-make sure API call works (Google API/Google Maps API)
-make sure Google Cloud database is working
+(currently using old database that will expire soon. after code setup will change over to new database)
+add Authentication
+user clicks on map to search
+get latitude longitude of city
+put that in keyword url
+
+Authentication To Do List:
+LogIn component
+state
+inputs for username & password
+submit button onclick
+fetch
+
+
+
 
