@@ -1,6 +1,8 @@
 import './App.css';
-import { Component } from 'react';
+import React, { Component } from 'react';
+import Header from './components/Header';
 import LogIn from './components/LogIn';
+import logo from './images/bmxlogo.jpg'
 
 
 
@@ -47,8 +49,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>BMXPARKS.ORG</h1>
-        <LogIn />
+        
+        <div className='header1'>
+          <div className='subheader'>
+            <img src={logo} id="bmxlogo" />
+            <Header />
+          </div>
+          <LogIn />
+        </div>
         <div id="map"></div>
       </div>
     );

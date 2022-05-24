@@ -1,8 +1,32 @@
 .App {
   text-align: center;
   height: 850px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 #map {
-  height: 100%;
+  margin: 10px;
+  height: 50%;
+}
+
+.header1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header2 {
+  margin: 500px;
+}
+
+.subheader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#bmxlogo {
+  margin: 10px;
+  height: 25px;
+  width: 25px;
 }

@@ -31,7 +31,6 @@ class LogIn extends Component {
     render() {
         return(
             <div id="login-screen">
-                <h4>Log In</h4>
                 <label>username
                 <input id="username-input" onChange={this.handleChangeUsername}></input>
                 </label>
