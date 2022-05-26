@@ -7,22 +7,22 @@ class AddPark extends Component {
             password: ""
     }
 
-    handleChangeUsername = (event) => {
+    handleChangeParkName = (event) => {
         const parkName = event.target.value;
         this.setState({ parkName });
     }
 
-    handleChangePassword = (event) => {
-        const password = event.target.value;
-        this.setState({ password });
+    handleChangeParkAddress = (event) => {
+        const parkAddress = event.target.value;
+        this.setState({ parkAddress });
     }
 
-    logInSubmit = () => {
+    addParkSubmit = () => {
         fetch('http://localhost:4004/signup', {
             method: 'post',
             body: {
-             "username": this.state.username,
-             "password": this.state.password
+             "park name": this.state.parkname,
+             "park address": this.state.parkaddress
             }
            });
  
@@ -31,16 +31,16 @@ class AddPark extends Component {
     render() {
         return(
             <div id="login-screen">
-                <label>username
-                <input id="username-input" onChange={this.handleChangeUsername}></input>
+                <label>park name
+                <input id="park-name-input" onChange={this.handleChangeParkName}></input>
                 </label>
-                <label>password
-                <input id="password-input" onChange={this.handleChangePassword}></input>
+                <label>park address
+                <input id="park-address-input" onChange={this.handleChangeParkAddress}></input>
                 </label>
-                <button onClick={this.logInSubmit}>submit</button>
+                <button onClick={this.addParkSubmit}>submit</button>
             </div>
         )
     }
 }
 
-export default LogIn;
+export default AddPark;

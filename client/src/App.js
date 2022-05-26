@@ -2,8 +2,8 @@ import './App.css';
 import React, { Component } from 'react';
 import Header from './components/Header';
 import LogIn from './components/LogIn';
-import logo from './images/bmxlogo.jpg'
-
+import logo from './images/bmxlogo.jpg';
+import AddPark from './components/AddPark';
 
 
 class App extends Component {
@@ -58,6 +58,7 @@ class App extends Component {
           <LogIn />
         </div>
         <div id="map"></div>
+        <AddPark />
       </div>
     );
   }
