@@ -17,12 +17,24 @@ class AddPark extends Component {
         this.setState({ parkAddress });
     }
 
+    handleChangeParkHours = (event) => {
+        const parkHours = event.target.value;
+        this.setState({ parkHours });
+    }
+
+    handleChangeParkType = (event) => {
+        const parkType = event.target.value;
+        this.setState({ parkType });
+    }
+
     addParkSubmit = () => {
         fetch('http://localhost:4004/signup', {
             method: 'post',
             body: {
              "park name": this.state.parkname,
-             "park address": this.state.parkaddress
+             "park address": this.state.parkaddress,
+             "park hours": this.state.parkhours,
+             "park type": this.state.parktype
             }
            });
  
@@ -37,7 +49,13 @@ class AddPark extends Component {
                 <label>park address
                 <input id="park-address-input" onChange={this.handleChangeParkAddress}></input>
                 </label>
-                <button onClick={this.addParkSubmit}>submit</button>
+                <label>park hours
+                <input id="park-hours-input" onChange={this.handleChangeParkHours}></input>
+                </label>
+                <label>park type
+                <input id="park-type-input" onChange={this.handleChangeParkType}></input>
+                </label>
+                <button onClick={this.addParkSubmit}>add park</button>
             </div>
         )
     }
