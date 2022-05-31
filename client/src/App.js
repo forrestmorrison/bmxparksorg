@@ -4,6 +4,7 @@ import Header from './components/Header';
 import LogIn from './components/LogIn';
 import logo from './images/bmxlogo.jpg';
 import AddPark from './components/AddPark';
+import CreateUser from './components/CreateUser';
 
 
 class App extends Component {
@@ -59,6 +60,7 @@ class App extends Component {
         </div>
         <div id="map"></div>
         <AddPark />
+        <CreateUser />
       </div>
     );
   }
