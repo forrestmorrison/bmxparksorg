@@ -12,4 +12,4 @@ export default {
             "type": "dirt, freestyle, race, street"
         }
     ]
-}
+};
