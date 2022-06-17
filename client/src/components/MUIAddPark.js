@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@material-ui/core/Box';
 import TextField from '@material-ui/core/TextField';
 
-export default function MUICreateUser() {
+export default function MUIAddPark() {
   return (
     <Box
       component="form"
@@ -16,31 +16,25 @@ export default function MUICreateUser() {
         <TextField
           required
           id="outlined-required"
-          label="username"
+          label="park name"
           defaultValue=""
         />
         <TextField
           required
           id="outlined-required"
-          label="email"
+          label="park address"
           defaultValue=""
         />
         <TextField
           required
           id="outlined-required"
-          label="confirm email"
+          label="park website"
           defaultValue=""
         />
         <TextField
           required
           id="outlined-required"
-          label="password"
-          defaultValue=""
-        />
-        <TextField
-          required
-          id="outlined-required"
-          label="confirm password"
+          label="park type"
           defaultValue=""
         />
       </div>
