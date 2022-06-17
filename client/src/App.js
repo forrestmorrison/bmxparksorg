@@ -3,10 +3,9 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import LogIn from './components/LogIn';
 import logo from './images/bmxlogo.jpg';
-import AddPark from './components/AddPark';
-import CreateUser from './components/CreateUser';
 import MUICreateUser from './components/MUICreateUser';
 import MUIAddPark from './components/MUIAddPark';
+import MUILogIn from './components/MUILogIn';
 
 
 class App extends Component {
@@ -58,11 +57,11 @@ class App extends Component {
             <img src={logo} id="bmxlogo" />
             <Header />
           </div>
-          <LogIn />
         </div>
         <div id="map"></div>
-        <MUIAddPark />
         <MUICreateUser />
+        <MUILogIn />
+        <MUIAddPark />
       </div>
     );
   }
