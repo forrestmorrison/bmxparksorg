@@ -5,6 +5,7 @@ import LogIn from './components/LogIn';
 import logo from './images/bmxlogo.jpg';
 import AddPark from './components/AddPark';
 import CreateUser from './components/CreateUser';
+import MUICreateUser from './components/MUICreateUser';
 
 
 class App extends Component {
@@ -61,6 +62,7 @@ class App extends Component {
         <div id="map"></div>
         <AddPark />
         <CreateUser />
+        <MUICreateUser />
       </div>
     );
   }
