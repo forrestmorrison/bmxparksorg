@@ -5,7 +5,6 @@ import LogIn from './components/LogIn';
 import logo from './images/bmxlogo.jpg';
 import MUICreateUser from './components/MUICreateUser';
 import MUIAddPark from './components/MUIAddPark';
-import MUILogIn from './components/MUILogIn';
 
 
 class App extends Component {

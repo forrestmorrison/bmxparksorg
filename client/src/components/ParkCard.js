@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Paper, Chip } from '@material-ui/core';
 
-const Park = (props) => {
+const ParkCard = (props) => {
     const id = props.match.params.id
     const car = props.parks.find(c => c.id === id)
 
@@ -19,4 +19,4 @@ const Park = (props) => {
     )
 }
 
-export default Park
+export default ParkCard
