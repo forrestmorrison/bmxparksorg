@@ -60,7 +60,6 @@ class App extends Component {
         </div>
         <div id="map"></div>
         <MUICreateUser />
-        <MUILogIn />
         <MUIAddPark />
       </div>
     );
