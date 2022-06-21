@@ -5,6 +5,8 @@ import LogIn from './components/LogIn';
 import logo from './images/bmxlogo.jpg';
 import MUICreateUser from './components/MUICreateUser';
 import MUIAddPark from './components/MUIAddPark';
+import { Wrapper, Status } from "@googlemaps/react-wrapper";
+import MapComponent from './components/MapComponent'
 
 
 class App extends Component {
@@ -32,15 +34,8 @@ class App extends Component {
   //     
   //   }
   // }
-  
-  
 
-  initMap = () => {
-    map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: -34.397, lng: 150.644 },
-      zoom: 8,
-    });
-}
+
 
   render() {
     return (
@@ -53,6 +48,9 @@ class App extends Component {
           </div>
         </div>
         <div id="map"></div>
+        <Wrapper apiKey={"API_KEY"} render={render}>
+          <MapComponent/>
+        </Wrapper>
         <MUICreateUser />
         <MUIAddPark />
       </div>
