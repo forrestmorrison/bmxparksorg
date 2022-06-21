@@ -37,13 +37,13 @@ class App extends Component {
 
   initMap = () => {
     const rockstarpark = { lat: 29.95862, lng: -95.42057};
-    let map = new window.google.maps.Map(document.getElementById("map"), {
-      center: { lat: 39, lng: -96 },
-      zoom: 5,
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 4,
+      center: rockstarpark,
     });
-  const marker = new window.google.maps.Marker({
-    position: rockstarpark,
-    map: map,
+    const marker = new google.maps.Marker({
+      position: rockstarpark,
+      map: map,
   });
 }
 
