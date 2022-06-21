@@ -33,18 +33,13 @@ class App extends Component {
   //   }
   // }
   
-
+  
 
   initMap = () => {
-    const rockstarpark = { lat: 29.95862, lng: -95.42057};
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 4,
-      center: rockstarpark,
+    map = new google.maps.Map(document.getElementById("map"), {
+      center: { lat: -34.397, lng: 150.644 },
+      zoom: 8,
     });
-    const marker = new google.maps.Marker({
-      position: rockstarpark,
-      map: map,
-  });
 }
 
   render() {
