@@ -1,6 +1,7 @@
-import './App.css';
-import React, { Component } from 'react';
-
+import "./App.css";
+import React, { Component } from "react";
+import { Wrapper, Status } from "@googlemaps/react-wrapper";
+import Map from "./components/Map"
 
 
 class App extends Component {
@@ -23,23 +24,20 @@ class App extends Component {
     this.initMap();
   }
 
-  // componentDidUpdate(prevProps, prevState) {
-  //   if (prevState.loaded !== this.state.loaded) {
-  //     
-  //   }
-  // }
-
-
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.loaded !== this.state.loaded) {
+      
+    }
+  }
+  
+  
 
   render() {
     return (
       <div className="App">
-        
-        <div className='header1'>
-          <div className='subheader'>
-
-          </div>
-        </div>
+        <Wrapper apiKey={"YOUR_API_KEY"} render={render}>
+          <Map/>
+        </Wrapper>
       </div>
     );
   }
