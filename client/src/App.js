@@ -1,7 +1,5 @@
 import "./App.css";
 import React, { Component } from "react";
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
-import Map from "./components/Map"
 
 
 class App extends Component {
@@ -35,9 +33,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Wrapper apiKey={"YOUR_API_KEY"} render={render}>
-          <Map/>
-        </Wrapper>
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=process.env.API_KEY&callback=initMap"
+          defer
+        ></script>
+
       </div>
     );
   }
