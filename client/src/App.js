@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import logo from './images/bmxlogo.jpg';
 
-
 class App extends Component {
   
   state = {
@@ -49,6 +48,7 @@ class App extends Component {
           <div className='subheader'>
             <img src={logo} alt="" id="bmxlogo" />
             <Header />
+
           </div>
         </div>
         <div id="map">
