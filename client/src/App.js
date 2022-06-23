@@ -27,12 +27,23 @@ class App extends Component {
       
     }
   }
-  
-  
+
+  initMap = () => {
+    const rockstarpark = { lat: 29.95862, lng: -95.42057};
+    let map = new window.google.maps.Map(document.getElementById("map"), {
+      center: { lat: 39, lng: -96 },
+      zoom: 5,
+    });
+    const marker = new window.google.maps.Marker({
+    position: rockstarpark,
+    map: map,
+    });
+  }
 
   render() {
     return (
       <div className="App">
+        <div id="map"></div>
         <script
           src="https://maps.googleapis.com/maps/api/js?key=process.env.API_KEY&callback=initMap"
           defer
