@@ -1,5 +1,7 @@
-import "./App.css";
-import React, { Component } from "react";
+import './App.css';
+import React, { Component } from 'react';
+import Header from './components/Header';
+import logo from './images/bmxlogo.jpg';
 
 
 class App extends Component {
@@ -43,12 +45,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div id="map"></div>
-        <script
-          src="https://maps.googleapis.com/maps/api/js?key=process.env.API_KEY&callback=initMap"
-          defer
-        ></script>
-
+        <div className='header1'>
+          <div className='subheader'>
+            <img src={logo} alt="" id="bmxlogo" />
+            <Header />
+          </div>
+        </div>
+        <div id="map">
+          
+        </div>
       </div>
     );
   }
