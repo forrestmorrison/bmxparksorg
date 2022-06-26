@@ -45,7 +45,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className='header1'>
-          <div className='subheader'>
+          <div className='banner'>
             <img src={logo} alt="" id="bmxlogo" />
             <Header />
 
