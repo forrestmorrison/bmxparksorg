@@ -1,6 +1,7 @@
 import './App.css';
 import React, { Component } from 'react';
-import Header from './components/Header';
+import Banner from './components/Banner';
+import Nav from './components/Nav';
 import logo from './images/bmxlogo.jpg';
 
 class App extends Component {
@@ -23,11 +24,11 @@ class App extends Component {
     this.initMap();
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (prevState.loaded !== this.state.loaded) {
+  // componentDidUpdate(prevProps, prevState) {
+  //   if (prevState.loaded !== this.state.loaded) {
       
-    }
-  }
+  //   }
+  // }
 
   initMap = () => {
     const rockstarpark = { lat: 29.95862, lng: -95.42057};
@@ -44,13 +45,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className='header1'>
+        <header>
           <div className='banner'>
             <img src={logo} alt="" id="bmxlogo" />
-            <Header />
-
+            <Banner />
           </div>
-        </div>
+          <Nav />
+        </header>
         <div id="map">
           
         </div>

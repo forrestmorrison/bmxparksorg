@@ -1,5 +1,6 @@
 
-const Header = () => {
+
+const Banner = () => {
     return (
         <div>
             <h1 style={{color: 'purple'}}>bmxparks.org</h1>
@@ -7,4 +8,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Banner;
