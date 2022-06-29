@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Banner from './components/Banner';
 import Nav from './components/Nav';
 import logo from './images/bmxlogo.jpg';
+import AddPark from './components/AddPark';
 
 class App extends Component {
   
@@ -55,6 +56,9 @@ class App extends Component {
         <div id="map">
           
         </div>
+        <main>
+          <AddPark />
+        </main>
       </div>
     );
   }
