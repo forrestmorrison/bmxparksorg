@@ -1,71 +1,103 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react'
+import {
+    Button,
+    TextField,
+    Dialog,
+    DialogContent,
+    DialogTitle
+} from '@material-ui/core'
 
 class CreateUser extends Component {
-
     state = {
-            username: "",
-            password: ""
+        open: false,
+        username: '',
+        email: '',
+        password: '',
+        confirmpassword: ''
     }
 
-    handleChangeUserName = (event) => {
-        const userName = event.target.value;
-        this.setState({ userName });
+    toggleDialog = () => this.setState({ open: !this.state.open })
+
+    handleTextChange = (e) => {
+        const newState = { ...this.state }
+        newState[e.target.id] = e.target.value
+        this.setState(newState)
     }
 
-    handleChangeUserEmail = (event) => {
-        const userEmail = event.target.value;
-        this.setState({ userEmail });
+    handleSubmit = (e) => {
+        e.preventDefault()
+        const payload = { ...this.state }
+        payload.id = this.props.parkTotal + 1
+        delete payload.open
+        console.log("Create User", payload)
+        // add this.props.addCar function here
+        this.props.createUser(payload);
+        // also add this.setState to close the dialog
+        this.setState({ open: false })
     }
 
-    handleChangeConfirmEmail = (event) => {
-        const confirmEmail = event.target.value;
-        this.setState({ confirmEmail });
-    }
-
-    handleChangeUserPassword = (event) => {
-        const userPassword = event.target.value;
-        this.setState({ userPassword });
-    }
-
-    handleChangeConfirmPassword = (event) => {
-        const confirmPassword = event.target.value;
-        this.setState({ confirmPassword });
-    }
-
-    createAccountSubmit = () => {
-        fetch('http://localhost:4004/createaccount', {
-            method: 'post',
-            body: {
-             "user name": this.state.username,
-             "user email": this.state.useremail,
-             "confirm email": this.state.confirmemail,
-             "user password": this.state.userpassword,
-             "confirm password": this.state.confirmpassword
-            }
-           });
- 
+    componentDidUpdate = (prevProps, prevState) => {
+        if (prevState.open !== this.state.open) {
+            this.setState({
+                username: '',
+                email: '',
+                password: '',
+                confirmpassword: ''
+            })
+        }
     }
 
     render() {
-        return(
-            <div id="create-user-screen">
-                <label>name
-                <input id="user-name-input" onChange={this.handleChangeUserName}></input>
-                </label>
-                <label>email
-                <input id="user-email-input" onChange={this.handleChangeUserEmail}></input>
-                </label>
-                <label>confirm email
-                <input id="confirm-email-input" onChange={this.handleChangeConfirmEmail}></input>
-                </label>
-                <label>password
-                <input id="user-password-input" onChange={this.handleChangeUserPassword}></input>
-                </label>
-                <label>password
-                <input id="confirm-password-input" onChange={this.handleChangeConfirmPassword}></input>
-                </label>
-                <button onClick={this.addParkSubmit}>add park</button>
-            </div>
+        return (
+            <Fragment>
+                <div style={{ textAlign: 'center' }}>
+                    <h1>create user:</h1>
+                    <Button
+                        variant="contained"
+                        className="create-user"
+                        onClick={this.toggleDialog}
+                    >
+                        create user
+                    </Button>
+                </div>
+                <div>
+                    <Dialog open={this.state.open} onClose={this.toggleDialog} >
+                        <DialogTitle>new user</DialogTitle>
+                        <DialogContent>
+                            <form 
+                                onSubmit={this.handleSubmit}
+                                style={{ display: 'flex', flexDirection: 'column', width: '350px' }}>
+                                <TextField 
+                                    id="username" 
+                                    placeholder="username" 
+                                    value={this.state.username} 
+                                    onChange={this.handleTextChange} 
+                                    required />
+                                <TextField 
+                                    id="email" 
+                                    placeholder="email" 
+                                    value={this.state.email} 
+                                    onChange={this.handleTextChange} 
+                                    required />
+                                <TextField 
+                                    id="password" 
+                                    placeholder="password" 
+                                    value={this.state.password} 
+                                    onChange={this.handleTextChange} 
+                                    required />
+                                <TextField 
+                                    id="confirm-password" 
+                                    placeholder="confirm password" 
+                                    value={this.state.confirmpassword} 
+                                    onChange={this.handleTextChange} 
+                                    required />
+                                <br />
+                                <Button variant="contained" color="primary" type="submit">Submit</Button>
+                            </form>
+                        </DialogContent>
+                    </Dialog>
+                </div>
+            </Fragment>
         )
     }
 }

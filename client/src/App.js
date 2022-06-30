@@ -4,6 +4,7 @@ import Banner from './components/Banner';
 import Nav from './components/Nav';
 import logo from './images/bmxlogo.jpg';
 import AddPark from './components/AddPark';
+import CreateUser from './components/CreateUser';
 
 class App extends Component {
   
@@ -58,6 +59,7 @@ class App extends Component {
         </div>
         <main>
           <AddPark />
+          <CreateUser />
         </main>
       </div>
     );

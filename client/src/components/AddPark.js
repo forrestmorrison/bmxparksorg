@@ -13,7 +13,7 @@ class AddPark extends Component {
         name: '',
         address: '',
         type: '',
-        website: '',
+        website: ''
     }
 
     toggleDialog = () => this.setState({ open: !this.state.open })
@@ -51,43 +51,43 @@ class AddPark extends Component {
         return (
             <Fragment>
                 <div style={{ textAlign: 'center' }}>
-                    <h1>Add Park:</h1>
+                    <h1>add park:</h1>
                     <Button
                         variant="contained"
                         className="add-park"
                         onClick={this.toggleDialog}
                     >
-                        Add Park
+                        add park
                     </Button>
                 </div>
                 <div>
                     <Dialog open={this.state.open} onClose={this.toggleDialog} >
-                        <DialogTitle>Add New Park</DialogTitle>
+                        <DialogTitle>add new park</DialogTitle>
                         <DialogContent>
                             <form 
                                 onSubmit={this.handleSubmit}
                                 style={{ display: 'flex', flexDirection: 'column', width: '350px' }}>
                                 <TextField 
                                     id="name" 
-                                    placeholder="Name" 
+                                    placeholder="name" 
                                     value={this.state.name} 
                                     onChange={this.handleTextChange} 
                                     required />
                                 <TextField 
                                     id="address" 
-                                    placeholder="Address" 
+                                    placeholder="address" 
                                     value={this.state.address} 
                                     onChange={this.handleTextChange} 
                                     required />
                                 <TextField 
                                     id="type" 
-                                    placeholder="Type" 
+                                    placeholder="type" 
                                     value={this.state.type} 
                                     onChange={this.handleTextChange} 
                                     required />
                                 <TextField 
                                     id="website" 
-                                    placeholder="Website" 
+                                    placeholder="website" 
                                     value={this.state.website} 
                                     onChange={this.handleTextChange} 
                                     required />
