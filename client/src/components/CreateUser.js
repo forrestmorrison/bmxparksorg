@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react'
+import { blue } from '@material-ui/core/colors'
 import {
     Button,
     TextField,
@@ -50,10 +51,9 @@ class CreateUser extends Component {
     render() {
         return (
             <Fragment>
-                <div style={{ textAlign: 'center' }}>
-                    <h1>create user:</h1>
+                <div class='but' style={{ textAlign: 'center' }}>
                     <Button
-                        variant="contained"
+                        variant="text"
                         className="create-user"
                         onClick={this.toggleDialog}
                     >

@@ -52,14 +52,15 @@ class App extends Component {
             <img src={logo} alt="" id="bmxlogo" />
             <Banner />
           </div>
-          <Nav />
+          <div className='buttons'>
+            <AddPark />
+            <CreateUser />
+          </div>
         </header>
         <div id="map">
           
         </div>
         <main>
-          <AddPark />
-          <CreateUser />
         </main>
       </div>
     );

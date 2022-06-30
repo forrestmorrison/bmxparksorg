@@ -17,6 +17,12 @@ header {
   align-items: center;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .banner {
   display: flex;
   flex-direction: row;

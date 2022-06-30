@@ -50,10 +50,9 @@ class AddPark extends Component {
     render() {
         return (
             <Fragment>
-                <div style={{ textAlign: 'center' }}>
-                    <h1>add park:</h1>
+                <div className='but' style={{ textAlign: 'center' }}>
                     <Button
-                        variant="contained"
+                        variant="text"
                         className="add-park"
                         onClick={this.toggleDialog}
                     >
