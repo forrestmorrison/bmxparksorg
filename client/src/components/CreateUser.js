@@ -55,6 +55,7 @@ class CreateUser extends Component {
                     <Button
                         variant="text"
                         className="create-user"
+                        style={{ color: '#0000FF' }}
                         onClick={this.toggleDialog}
                     >
                         create user
@@ -92,7 +93,7 @@ class CreateUser extends Component {
                                     onChange={this.handleTextChange} 
                                     required />
                                 <br />
-                                <Button variant="contained" color="primary" type="submit">Submit</Button>
+                                <Button variant="contained" style={{ backgroundColor: '#800080', color: '#FFFFFF' }} type="submit">Submit</Button>
                             </form>
                         </DialogContent>
                     </Dialog>

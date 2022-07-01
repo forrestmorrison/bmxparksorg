@@ -45,6 +45,7 @@ class LogIn extends Component {
                     <Button
                         variant="text"
                         className="add-park"
+                        style={{ color: '#0000FF' }}
                         onClick={this.toggleDialog}
                     >
                         log in
@@ -70,7 +71,7 @@ class LogIn extends Component {
                                     onChange={this.handleTextChange} 
                                     required />
                                 <br />
-                                <Button variant="contained" color="primary" type="submit" onClick={this.logInSubmit}>Submit</Button>
+                                <Button variant="contained" style={{ backgroundColor: '#800080', color: '#FFFFFF' }} type="submit" onClick={this.logInSubmit}>Submit</Button>
                             </form>
                         </DialogContent>
                     </Dialog>
