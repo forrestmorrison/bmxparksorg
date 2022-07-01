@@ -1,9 +1,8 @@
 import './App.css';
 import React, { Component } from 'react';
 import Banner from './components/Banner';
-import Nav from './components/Nav';
 import logo from './images/bmxlogo.jpg';
-import AddPark from './components/AddPark';
+import LogIn from './components/LogIn';
 import CreateUser from './components/CreateUser';
 
 class App extends Component {
@@ -53,7 +52,7 @@ class App extends Component {
             <Banner />
           </div>
           <div className='buttons'>
-            <AddPark />
+            <LogIn />
             <CreateUser />
           </div>
         </header>

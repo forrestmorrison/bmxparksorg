@@ -1,11 +1,22 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import {
+    Button,
+    TextField,
+    Dialog,
+    DialogContent,
+    DialogTitle
+} from '@material-ui/core';
+
 
 class LogIn extends Component {
 
     state = {
+            open: false,
             username: "",
             password: ""
     }
+
+    toggleDialog = () => this.setState({ open: !this.state.open })
 
     handleChangeUsername = (event) => {
         const username = event.target.value;
@@ -28,16 +39,43 @@ class LogIn extends Component {
     }
 
     render() {
-        return(
-            <div id="login-screen">
-                <label>username
-                <input id="username-input" onChange={this.handleChangeUsername}></input>
-                </label>
-                <label>password
-                <input id="password-input" onChange={this.handleChangePassword}></input>
-                </label>
-                <button onClick={this.logInSubmit}>submit</button>
-            </div>
+        return (
+            <Fragment>
+                <div className='but' style={{ textAlign: 'center' }}>
+                    <Button
+                        variant="text"
+                        className="add-park"
+                        onClick={this.toggleDialog}
+                    >
+                        log in
+                    </Button>
+                </div>
+                <div>
+                    <Dialog open={this.state.open} onClose={this.toggleDialog} >
+                        <DialogTitle>log in</DialogTitle>
+                        <DialogContent>
+                            <form 
+                                onSubmit={this.handleSubmit}
+                                style={{ display: 'flex', flexDirection: 'column', width: '350px' }}>
+                                <TextField 
+                                    id="username" 
+                                    placeholder="username" 
+                                    value={this.state.username} 
+                                    onChange={this.handleTextChange} 
+                                    required />
+                                <TextField 
+                                    id="password" 
+                                    placeholder="password" 
+                                    value={this.state.password} 
+                                    onChange={this.handleTextChange} 
+                                    required />
+                                <br />
+                                <Button variant="contained" color="primary" type="submit" onClick={this.logInSubmit}>Submit</Button>
+                            </form>
+                        </DialogContent>
+                    </Dialog>
+                </div>
+            </Fragment>
         )
     }
 }
