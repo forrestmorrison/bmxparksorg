@@ -1,10 +1,12 @@
+import CreateUser from "./CreateUser";
+import LogIn from "./LogIn";
 
 
 const Nav = () => {
     return (
         <div className="nav1">
-            <button className="btn">add park</button>
-            <button className="btn">log out</button>
+            <LogIn />
+            <CreateUser />
         </div>
     )
 }
