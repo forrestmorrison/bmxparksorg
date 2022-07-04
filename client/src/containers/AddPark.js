@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import AddPark from "../components/AddCar";
+import AddPark from "../components/AddPark";
 import { addPark } from "../redux/actions";
 
 const matchDispatchToProps = (dispatch) => {

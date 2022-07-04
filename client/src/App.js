@@ -4,6 +4,8 @@ import Banner from './components/Banner';
 import logo from './images/bmxlogo.jpg';
 import LogIn from './components/LogIn';
 import CreateUser from './components/CreateUser';
+import AddPark from './containers/AddPark';
+import Dashboard from './components/Dashboard';
 
 class App extends Component {
   
@@ -60,6 +62,7 @@ class App extends Component {
           
         </div>
         <main>
+
         </main>
       </div>
     );

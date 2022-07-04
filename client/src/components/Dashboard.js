@@ -15,8 +15,6 @@ const Dashboard = (props) => {
         <Container maxWidth="lg" className="park-container">
             <h4>Welcome, {props.user.username}</h4>
             <div className="flex-container">
-                <Chart />
-                <Total />
                 <AddPark parkTotal={props.parks.length} />
             </div>
             <Table>
@@ -36,10 +34,10 @@ const Dashboard = (props) => {
                         <TableCell component="th" scope="row">
                             {park.id}
                         </TableCell>
-                        <TableCell>{car["name"]}</TableCell>
-                        <TableCell>{car["address"]}</TableCell>
-                        <TableCell>{car["type"]}</TableCell>
-                        <TableCell>{car["website"]}</TableCell>
+                        <TableCell>{park["name"]}</TableCell>
+                        <TableCell>{park["address"]}</TableCell>
+                        <TableCell>{park["type"]}</TableCell>
+                        <TableCell>{park["website"]}</TableCell>
                         <TableCell>
                             <DeleteIcon onClick={() => props.removePark(idx)}
                                 className="icon text-red" />
