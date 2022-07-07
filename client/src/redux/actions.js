@@ -11,3 +11,10 @@ export const removePark = (index) => {
         value: index
     }
 }
+
+export const addUser = (newUser) => {
+    return {
+        type: 'ADD_USER',
+        value: newUser
+    }
+}
