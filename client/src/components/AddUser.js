@@ -8,7 +8,7 @@ import {
     DialogTitle
 } from '@material-ui/core'
 
-class CreateUser extends Component {
+class AddUser extends Component {
     state = {
         open: false,
         username: '',
@@ -30,9 +30,9 @@ class CreateUser extends Component {
         const payload = { ...this.state }
         payload.id = this.props.parkTotal + 1
         delete payload.open
-        console.log("Create User", payload)
-        // add this.props.addCar function here
-        this.props.createUser(payload);
+        console.log("Add User", payload)
+        // add this.props.addUser function here
+        this.props.addUser(payload);
         // also add this.setState to close the dialog
         this.setState({ open: false })
     }
@@ -54,11 +54,11 @@ class CreateUser extends Component {
                 <div class='but' style={{ textAlign: 'center' }}>
                     <Button
                         variant="text"
-                        className="create-user"
+                        className="add-user"
                         style={{ color: '#0000FF' }}
                         onClick={this.toggleDialog}
                     >
-                        create user
+                        add user
                     </Button>
                 </div>
                 <div>
@@ -103,4 +103,4 @@ class CreateUser extends Component {
     }
 }
 
-export default CreateUser;
+export default AddUser;

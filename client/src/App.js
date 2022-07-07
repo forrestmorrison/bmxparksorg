@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Banner from './components/Banner';
 import logo from './images/bmxlogo.jpg';
 import LogIn from './components/LogIn';
-import CreateUser from './components/CreateUser';
+import AddUser from './components/AddUser';
 import AddPark from './containers/AddPark';
 import Dashboard from './components/Dashboard';
 
@@ -55,7 +55,7 @@ class App extends Component {
           </div>
           <div className='buttons'>
             <LogIn />
-            <CreateUser />
+            <AddUser />
           </div>
         </header>
         <div id="map">
