@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react'
-import { blue } from '@material-ui/core/colors'
 import {
     Button,
     TextField,
