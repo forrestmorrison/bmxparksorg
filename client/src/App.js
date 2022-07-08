@@ -1,11 +1,14 @@
 import './App.css';
 import React, { Component } from 'react';
+import { Provider } from 'react-redux'
+import store from './redux/store'
 import Banner from './components/Banner';
 import logo from './images/bmxlogo.jpg';
 import LogIn from './components/LogIn';
 import AddUser from './components/AddUser';
 import AddPark from './containers/AddPark';
 import Dashboard from './components/Dashboard';
+
 
 class App extends Component {
   
