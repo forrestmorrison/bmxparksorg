@@ -30,9 +30,7 @@ class AddUser extends Component {
         payload.id = this.props.parkTotal + 1
         delete payload.open
         console.log("Add User", payload)
-        // add this.props.addUser function here
         this.props.addUser(payload);
-        // also add this.setState to close the dialog
         this.setState({ open: false })
     }
 
