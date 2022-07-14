@@ -30,8 +30,6 @@ class AddPark extends Component {
         payload.id = this.props.parkTotal + 1
         delete payload.open
         console.log("THE PARK", payload)
-        // add this.props.addCar function here
-        // also add this.setState to close the dialog
         this.props.addPark(payload)
         this.setState({ open: false })
     }
