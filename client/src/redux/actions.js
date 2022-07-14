@@ -18,3 +18,15 @@ export const addUser = (newUser) => {
         value: newUser
     }
 }
+
+export const fetchParks = (dispatch) => {
+    fetch("")
+        .then(res => res.json())
+        .then(response => {
+            const action = {
+                type: 'FETCH_PARKS',
+                value: response.Results
+            }
+            dispatch(action)
+        })
+}
