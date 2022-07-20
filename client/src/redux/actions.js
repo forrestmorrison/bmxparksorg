@@ -19,6 +19,13 @@ export const addUser = (newUser) => {
     }
 }
 
+export const addComment = (newComment) => {
+    return {
+        type: 'ADD_COMMENT',
+        value: newComment
+    }
+}
+
 export const fetchParks = (dispatch) => {
     fetch("")
         .then(res => res.json())
