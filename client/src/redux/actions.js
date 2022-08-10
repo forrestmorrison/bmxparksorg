@@ -26,6 +26,13 @@ export const addComment = (newComment) => {
     }
 }
 
+export const removeComment = (index) => {
+    return {
+        type: 'REMOVE_COMMENT',
+        value: index
+    }
+}
+
 export const fetchParks = (dispatch) => {
     fetch("")
         .then(res => res.json())
