@@ -18,4 +18,19 @@ const parks = (state = [], action) => {
     }
 }
 
-export default combineReducers({ user, parks })
+const comments = (state = [], action) => {
+    switch (action.type) {
+        case "ADD_COMMENT":
+            console.log(state);
+            return [...state, action.value]
+        case "REMOVE_COMMENT":
+            console.log(state);
+            let stateCopy = [...state];
+            stateCopy.splice(action.value, 1)
+            return stateCopy;
+    default:
+        return state
+    }
+}
+
+export default combineReducers({ user, parks, comments })
