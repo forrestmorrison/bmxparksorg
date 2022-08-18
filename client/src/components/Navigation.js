@@ -16,10 +16,10 @@ const Navigation = () => {
                 </Typography>
                 <ul className="nav-list">
                     <li className="nav-list-item">
-                        <Link to="/login">add park</Link>
+                        <Link to="/login">log in</Link>
                     </li>
                     <li className="nav-list-item">
-                        <Link to="/createuser">log out</Link>
+                        <Link to="/createuser">create user</Link>
                     </li>
                 </ul>
             </Toolbar>
