@@ -9,9 +9,6 @@ const Navigation = () => {
     return (
         <AppBar position="relative">
             <Toolbar>
-                <IconButton color="inherit">
-                    <MenuIcon />
-                </IconButton>
                 <Typography variant="h6" style={{ flexGrow: "1" }}>
                     bmxparks.org
                 </Typography>
