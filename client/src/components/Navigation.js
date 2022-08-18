@@ -3,6 +3,7 @@ import { AppBar, Toolbar, IconButton,
     Typography } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
 import { Link } from 'react-router-dom'
+import AddPark from '../containers/AddPark'
 
 const Navigation = () => {
     return (
@@ -16,7 +17,7 @@ const Navigation = () => {
                 </Typography>
                 <ul className="nav-list">
                     <li className="nav-list-item">
-                        <Link to="/addpark">add park</Link>
+                        <AddPark />
                     </li>
                     <li className="nav-list-item">
                         <Link to="/logout">log out</Link>
