@@ -12,14 +12,8 @@ const Navigation = () => {
                 <Typography variant="h5" style={{ flexGrow: "1", color: '#800080' }}>
                     bmxparks.org
                 </Typography>
-                <ul className="nav-list">
-                    <li className="nav-list-item">
-                        <AddPark />
-                    </li>
-                    <li className="nav-list-item">
-                        <Link to="/logout">log out</Link>
-                    </li>
-                </ul>
+                <AddPark />
+                <Link to="/logout">log out</Link>
             </Toolbar>
         </AppBar>
     )
