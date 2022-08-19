@@ -33,6 +33,14 @@ export const removeComment = (index) => {
     }
 }
 
+
+export const map = (map) => {
+    return {
+        type: 'MAP',
+        value: map
+    }
+}
+
 export const fetchParks = (dispatch) => {
     fetch("")
         .then(res => res.json())
