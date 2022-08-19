@@ -7,9 +7,9 @@ import AddPark from '../containers/AddPark'
 
 const Navigation = () => {
     return (
-        <AppBar position="relative">
-            <Toolbar>
-                <Typography variant="h6" style={{ flexGrow: "1" }}>
+        <AppBar position="relative" style={{ background: "#FFFFFF" }}>
+            <Toolbar style={{ color: '#FFFFFF'}}>
+                <Typography variant="h5" style={{ flexGrow: "1", color: '#800080' }}>
                     bmxparks.org
                 </Typography>
                 <ul className="nav-list">
