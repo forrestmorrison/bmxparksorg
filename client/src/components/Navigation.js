@@ -11,7 +11,7 @@ const Navigation = () => {
                     bmxparks.org
                 </Typography>
                 <AddPark />
-                <Link to="/logout">log out</Link>
+                <Link to="/logout">LOG OUT</Link>
             </Toolbar>
         </AppBar>
     )
