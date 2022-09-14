@@ -1,9 +1,9 @@
 import React from 'react'
 import { Container, Paper, Chip } from '@material-ui/core';
 
-const ParkCard = (props) => {
+const Park = (props) => {
     const id = props.match.params.id
-    const car = props.parks.find(c => c.id === id)
+    const park = props.parks.find(c => c.id === id)
 
     return (
         <Container maxWidth="sm" className="park-container">
@@ -19,4 +19,4 @@ const ParkCard = (props) => {
     )
 }
 
-export default ParkCard
+export default Park

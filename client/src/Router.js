@@ -6,8 +6,8 @@ import Park from './containers/Park'
 const Router = () => {
     return (
         <Switch>
-            <Route path="/dashboard" component={Dashboard} />
             <Route path="/park/:id" component={Park} />
+            <Route path="/dashboard" component={Dashboard} />
         </Switch>
     );
 };
