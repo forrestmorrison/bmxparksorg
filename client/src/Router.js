@@ -1,14 +1,14 @@
 import React from 'react'
-import { Switch, Route } from 'react-router'
+import { BrowserRouter as Route, Routes } from "react-router-dom";
 import Dashboard from './containers/Dashboard'
 import Park from './containers/Park'
 
 const Router = () => {
     return (
-        <Switch>
+        <Routes>
             <Route path="/park/:id" component={Park} />
             <Route path="/dashboard" component={Dashboard} />
-        </Switch>
+        </Routes>
     );
 };
 
