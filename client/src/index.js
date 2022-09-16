@@ -8,7 +8,9 @@ import { Provider } from 'react-redux';
 
 ReactDOM.render(
   <Provider>
-    <App />
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
   </Provider>,
   document.getElementById('root')
 );
