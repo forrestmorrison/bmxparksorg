@@ -1,7 +1,6 @@
 import React from 'react'
 import { AppBar, Toolbar, Typography } from '@material-ui/core'
 import { Link } from 'react-router-dom'
-import AddPark from '../containers/AddPark'
 
 const Navigation = () => {
     return (
