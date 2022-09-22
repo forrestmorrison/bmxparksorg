@@ -4,6 +4,7 @@ import Home from './components/Home';
 import LogIn from './components/LogIn';
 import Dashboard from './containers/Dashboard'
 import Park from './containers/Park'
+import Import from './components/Import'
 
 const Router = () => {
     return (
@@ -12,6 +13,7 @@ const Router = () => {
             <Route path="/login" component={LogIn} />
             <Route path="/park/:id" component={Park} />
             <Route path="/dashboard" component={Dashboard} />
+            <Route path="/import" component={Import} />
         </Routes>
     );
 };
