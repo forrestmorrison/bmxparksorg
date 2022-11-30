@@ -1,5 +1,7 @@
 server/node_modules
 server/.env
+server/bmxparksorg.txt
+server/README.md
 client/node_modules
 client/.env
 server/package.json

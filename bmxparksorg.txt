@@ -13,12 +13,13 @@ users, when adding a new park, can input name, address, hours, park type, free o
 use auto-complete api to auto-complete relevant search results
 
 
-database: bmxparksorg2
-bmxparksorg2 public ip address: 35.232.26.199
-bmxparksorg2 connection name: i-hexagon-343017:us-central1:bmxparksorg2
+database: bmxparksorg6
+bmxparksorg6 public ip address: 35.232.26.199
+bmxparksorg6 connection name: plucky-handler-370219:us-central1:first-instance
 Google Maps API (4/4/22): AIzaSyBVM8bvhYZGj8hzwMBaUZpJP9XZTLu382Y (bmxparksorg@gmail.com)
 old key (3/22): AIzaSyDmNjVJc_YBllQAeiPhiAWyW-u2j1nvGbQ&v
 
+bmxparksorg6 cloud SQL instance password: Iyey:TEI6@H/T1#"
 
 FUNCTIONALITY:
 
