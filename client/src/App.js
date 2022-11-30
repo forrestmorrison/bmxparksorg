@@ -14,7 +14,7 @@ function App () {
       <Provider store={store}>
         <BrowserRouter>
           <Navigation />
-            <Router />
+          <Router />
         </BrowserRouter>
       </Provider>
     </React.StrictMode>
