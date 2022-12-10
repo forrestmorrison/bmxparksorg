@@ -10,14 +10,9 @@ import store from './redux/store'
 function App () {
 
   return (
-    <React.StrictMode>
-      <Provider store={store}>
-        <BrowserRouter>
-          <Navigation />
-          <Router />
-        </BrowserRouter>
-      </Provider>
-    </React.StrictMode>
+    <BrowserRouter>
+      <Navigation />
+    </BrowserRouter>
   );
 
 }
